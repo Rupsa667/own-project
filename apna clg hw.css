@@ -1,0 +1,156 @@
+/* .heading{
+  background-color: blue;
+  color:red;
+} */
+ /* button{
+  background-color: green;
+ } */
+  /* h1{
+    text-align: center;
+    text-transform:capitalize ;
+  } */
+
+  /* *{
+    font-family: 'Times New Roman';
+  } */
+
+  /* #outer{
+    font-size :25px;
+  }
+  #inner{
+   font-size:10px;
+  } */
+
+  /* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+  } */
+
+  /* *{
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  #navbar{
+    background-color: #0f1111;
+    height: 60px;
+  }
+button{
+  background-color: #f08804;
+}
+#logo{
+  color: #f08804;
+  font-size: 25px;
+}
+a{
+  padding-right: 200px;
+
+} */
+
+/* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+#navbar{
+  background-color: #0f1111;
+  height: 60px;
+}
+button{
+background-color: #f08804;
+}
+#logo{
+color: #f08804;
+font-size: 25px;
+}
+a{
+padding-right: 200px;
+color: antiquewhite;
+
+}
+.content-box{
+height: 100px;
+width: 100px;
+border:2px solid black;
+display: inline-block;
+
+}
+footer{
+  background-color: #0f1111;
+  color: antiquewhite;
+}
+#content{
+  height: 700px;
+} */
+
+/* div{
+  height: 100px;
+  width: 100px;
+  background-image:url("c:\Users\User\Downloads\nature_photo.jpg.jpg");
+  background-size:cover;
+  
+} */
+
+/* .navbar{
+  background-color: rgb(252, 159, 159);
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+li{
+  list-style-type: none;
+  color:green;
+  display: inline;
+  
+}
+.outer{
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 0, 187);
+} */
+
+/* div{
+  height: 200px;
+  width: 200px;
+  background-color: deeppink;
+}
+@media (max-width:600px) {
+  div{
+    background-color: green;
+  }
+}
+@media(min-width:700px)and(max-width:900px){
+  div{
+    background-color: rgb(128, 0, 0);
+  }
+} */
+
+/* div{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+ border:20px solid blue;
+ border-top:20px solid rgb(255, 0, 200);
+ animation:spinanimate 1s ease-in-out 0s infinite normal ;
+}
+@keyframes spinanimate{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg); 
+  } */
