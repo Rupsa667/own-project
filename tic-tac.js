@@ -1,54 +1,32 @@
-let boxes=document.querySelectorAll(".box");
-let reset=document.querySelector("#reset");
-let newGameBtn=document.querySelector("#new-btn");
-let msg-Container=document.querySelector("#msg-container");
-let msg=document.querySelector("#msg");
-let turnO=true;//player X,player O
-const winPatterns=[
-  [0,1,2],
-  [0,3,6],
-  [0,4,8],
-  [1,4,7],
-  [2,5,8],
-  [2,4,6],
-  [3,4,5],
-  [6,7,8],
-];
-boxes.forEach((box) => {
-  box.addEventListener("click",()=>{
-    console.log("box was clicked");
-    if(turnO===true){
-      //player0
-      box.innerText="O";
-      turnO=false;
-    }else{
-      //playerX
-      box.innerText="X";
-      turnO=true;
-    }
-    box.disabled=true;
-    checkWinner();
-  });
-});
-const showWinner=(winner)=<{
-  msg.innerText='Congratulations,Winner is ${winner}';
-  msgContainer.classList.remove("hide");
+let currentPlayer="X";
+let arr=Array(9).fill(null);
+function checkWinner() {
+    if (
+      (arr[0] !== null && arr[0]==arr[1] && arr[1]==arr[2]) ||
+      (arr[3] !== null && arr[3]==arr[4] && arr[4]==arr[5]) ||
+      (arr[6] !== null && arr[6]==arr[7] && arr[7]==arr[8]) ||
+      (arr[0] !== null && arr[0]==arr[3] && arr[3]==arr[6]) ||
+      (arr[1] !== null && arr[1]==arr[4] && arr[4]==arr[7]) ||
+      (arr[2] !== null && arr[2]==arr[5] && arr[5]==arr[8]) ||
+      (arr[0] !== null && arr[0]==arr[4] && arr[4]==arr[8]) ||
+      (arr[2] !== null && arr[2]==arr[4] && arr[4]==arr[6]) 
+    ){
+      document.write(`winner is ${currentPlayer}`);
+      return;
+   }
+   if(!arr.some((e) => e === null)){
+    document.write( 'Draw!!' );
+      return;
+   }
+}
+function handleclick(el) {
+  const id = Number(el.id);
+  if(arr[id] !==null) return;
+  arr[id] = currentPlayer;
+  el.innerText = currentPlayer;
+  checkWinner();
+  currentPlayer = currentPlayer === "X" ? "0" : "X";
 }
 
-
-
-const checkWinner=()=>{
-  for(let pattern of winPatterns){
-    let pos1Val=boxes[pattern[0]].innerText;
-    let pos2Val=boxes[pattern[1]].innerText;
-    let pos3Val=boxes[pattern[2]].innerText;
-    if(pos1Val !="" && pos2Val !="" && pos3Val != ""){
-      if(pos1Val===pos2Val && pos2Val===pos3Val){
-        console.log("winner",pos1Val);
-        showWinner(pos1Val);
-      }
-    }
-  }
-}
 
 

@@ -163,3 +163,31 @@
 #   ind_val=usd_val*83
 # print(usd_val,"usd=",ind_val,"ind")
 # converetr(5)
+
+
+# clg hw
+# a,b=2,7
+# a,b=b,a
+# print(a)
+# print(b)
+# p=int(input("p is"))
+# q=int(input("q is"))
+# temp=p
+# p=q
+# q=temp
+# print("p is",p)
+# print("q is",q)
+# import math
+# a=int(input("a"))
+# b=int(input("b"))
+# c=int(input("c"))
+# s=(a+b+c)/2
+# area=math.sqrt(s*(s-a)*(s-b)*(s-c))
+# print("area is",area)
+# import math
+# p1=[4,2]
+# p2=[1,2]
+# dis=math.sqrt(((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))
+# print("dis is:",dis)
+s=35/7
+print(s)
